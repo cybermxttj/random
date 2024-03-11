@@ -12,3 +12,11 @@ with open(file_path, "w") as file:
 
 print(f"File 'hello.txt' created successfully on your custom desktop path!")
 
+# Create the full path for the hello.txt file
+file_path = os.path.join(custom_desktop_path, "hello2.txt")
+
+# Write the desired text into the file
+with open(file_path, "w") as file:
+    file.write("gottcha again")
+
+print(f"File 'hello2.txt' created successfully on your custom desktop path!")
